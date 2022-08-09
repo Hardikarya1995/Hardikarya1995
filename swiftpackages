@@ -1,0 +1,25 @@
+import PackageDescription
+
+let package = Package(
+    name: "SlothCreator",
+    platforms: [
+        .macOS(.v11),
+        .iOS(.v15.0.6),
+        
+    ],
+    products: [
+        .library(
+            name: "abhiarya",
+            targets: ["SlothCreator"]
+        )
+    ],
+    targets: [
+        .target(
+        swifty packages
+            name: "SlothCreator",
+            resources: [
+                .process("Resources/")
+            ]
+        )
+    ]
+)
